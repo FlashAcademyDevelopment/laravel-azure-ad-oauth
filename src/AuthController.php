@@ -18,7 +18,7 @@ class AuthController extends Controller
 
         $authUser = $this->findOrCreateUser($user);
 
-        auth()->login($authUser, true);
+        auth()->login($authUser);
 
         // session([
         //     'azure_user' => $user
